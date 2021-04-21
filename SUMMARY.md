@@ -16,7 +16,7 @@
 
 ## Fluent interface
 
-* [Build a query](fluent-interface/build-a-query.md)
+* [Limestone query](fluent-interface/build-a-query.md)
 
 ## HTTP API
 

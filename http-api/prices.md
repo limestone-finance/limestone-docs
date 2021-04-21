@@ -2,7 +2,7 @@
 
 {% api-method method="get" host="https://api.limestone.finance" path="/prices" %}
 {% api-method-summary %}
-Get prices
+Get price for a single token
 {% endapi-method-summary %}
 
 {% api-method-description %}
