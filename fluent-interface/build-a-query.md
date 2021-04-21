@@ -1,7 +1,5 @@
 # Limestone query
 
-
-
 ## Fluent interface for limestone
 
 Limestone API supports a fluent interface to make the price fetching even simpler.
