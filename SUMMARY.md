@@ -22,7 +22,7 @@
 
 * [Prices](http-api/prices.md)
 
-## Definitions
+## Knowledge base <a id="definitions"></a>
 
 * [Cache layer](definitions/cache-layer.md)
 * [Signature verification](definitions/signature-verification.md)
