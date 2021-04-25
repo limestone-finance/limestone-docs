@@ -1,3 +1,9 @@
+---
+description: >-
+  A cache layer is a web service, that caches prices data signed by data
+  providers.
+---
+
 # Cache layer
 
 By default, Limestone API fetches data from the Limestone cache layer. It works way faster than fetching directly from Arweave Blockchain. Even so, thanks to signature verification prices data is still trusted and secure.
