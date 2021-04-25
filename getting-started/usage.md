@@ -4,6 +4,8 @@ description: Limestone-api usage
 
 # Usage
 
+Firstly, you need to import limestone module
+
 ```javascript
 // Using Node.js `require()`
 const limestone = require('limestone-api');
