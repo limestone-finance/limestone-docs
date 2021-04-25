@@ -1,6 +1,10 @@
-# Signature verification
+---
+description: >-
+  All prices saved in Limestone have a signature, thanks to which you always can
+  verify if the price data has been submitted by the trusted provider.
+---
 
-All prices saved in Limestone have a signature, thanks to which you always can verify if the price data has been submitted by the trusted provider.
+# Signature verification
 
 ### Enable signature verification
 
