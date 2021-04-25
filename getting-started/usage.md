@@ -21,11 +21,11 @@ console.log(price.value); // latest price value for AR token (in USD)
 console.log(price.timestamp); // the exact timestamp of the price
 ```
 
-To read more advanced use cases visit the methods documentation:
+To read more advanced examples, visit the methods documentation:
 
 * [getPrice](https://docs.limestone.finance/methods/getprice)
 * [getHistoricalPrice](https://docs.limestone.finance/methods/gethistoricalprice)
 * [getAllPrices](https://docs.limestone.finance/methods/getallprices)
 
-You can check out the [fluent interface docs](https://docs.limestone.finance/fluent-interface/build-a-query), which makes the price fetching even simpler for most popular query use cases.
+You can also check out docs for the [limestone fluent interface](https://docs.limestone.finance/fluent-interface/build-a-query), which makes the price fetching even simpler for most popular query use cases.
 
