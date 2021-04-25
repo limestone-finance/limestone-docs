@@ -1,3 +1,9 @@
+---
+description: >-
+  Limestone query is a special construction exported by limestone api. It makes
+  it easier to execute queries for popular use cases.
+---
+
 # Limestone query
 
 ## Fluent interface for limestone
@@ -6,20 +12,34 @@ Limestone API supports a fluent interface to make the price fetching even simple
 
 #### Importing
 
-To use the fluent interface you should import the limestone-query module
+To use the fluent interface you should import the limestone-api in a standard way and initialise a query calling `limestone.query()`;
 
 ```javascript
 // Using Node.js `require()`
-const query = require('limestone-api/limestone-query');
+const limestone = require('limestone-api');
 
 // Using ES6 imports
-import query from 'limestone-api/limestone-query';
+import limestone from 'limestone-api';
 ```
+
+### Usage
+
+All limestone queries consits of 4 parts:
+
+* Query initialization \(`limestone.query()`\)
+* What to fetch \(`symbol` or `symbols`\)
+* For which date/dates \(`latest`, `atDate`, `forLastHours`, `hoursAgo`, `fromDate`, `toDate`\)
+* Query execution \(`exec`\)
+
+### Examples
 
 #### Get the latest price for a single token
 
 ```javascript
-const price = await query().symbol("AR").latest().exec();
+const price = await limestone.query()
+  .symbol("AR")
+  .latest()
+  .exec();
 
 console.log(price.value); // latest price value for AR token (in USD)
 console.log(price.timestamp); // the exact timestamp of the price
@@ -28,7 +48,10 @@ console.log(price.timestamp); // the exact timestamp of the price
 #### Get the historical price for a single token
 
 ```javascript
-const price = await query().symbol("AR").atDate("2021-04-19").exec();
+const price = await limestone.query()
+  .symbol("AR")
+  .atDate("2021-04-19")
+  .exec();
 ```
 
 💡 Note: The argument passed to `atDate` must be convertable to date. You may pass date \(e.g. `new Date(2021-04-01)`\), timestamp \(e.g. `1617709771289`\), or just string \(e.g. `2021-04-01` or `2021-04-01T12:30:58`\)
@@ -37,20 +60,29 @@ const price = await query().symbol("AR").atDate("2021-04-19").exec();
 
 ```javascript
 // Returns an array of prices with ~10 minutes interval
-const prices = await query().symbol("AR").forLastHours(12).exec();
+const prices = await limestone.query()
+  .symbol("AR")
+  .forLastHours(12)
+  .exec();
 ```
 
 #### Get the historical price for X hours ago
 
 ```javascript
-const price = await query().symbol("AR").hoursAgo(24).exec();
+const price = await limestone.query()
+  .symbol("AR")
+  .hoursAgo(24)
+  .exec();
 ```
 
 #### Get the historical price for the last X days
 
 ```javascript
 // Returns an array of prices with ~1h minutes interval
-const prices = await query().symbol("AR").forLastDays(7).exec();
+const prices = await limestone.query()
+  .symbol("AR")
+  .forLastDays(7)
+  .exec();
 ```
 
 #### Get the historical prices in a time range
@@ -59,7 +91,7 @@ const prices = await query().symbol("AR").forLastDays(7).exec();
 // Returns an array of prices
 // Interval depends on the time range
 // For ranges more than 24 hours interval is 1h
-const prices = await query()
+const prices = await limestone.query()
   .symbol("AR")
   .fromDate("2021-04-19")
   .toDate("2021-04-20")
@@ -69,7 +101,7 @@ const prices = await query()
 #### Get the latest prices for several tokens
 
 ```javascript
-const prices = await lQuery()
+const prices = await limestone.query()
   .symbols(["AR", "BTC", "ETH"])
   .latest()
   .exec();
@@ -95,7 +127,7 @@ console.log(prices); // Example output below
 #### Get the historical prices for several tokens
 
 ```javascript
-const prices: any = await query()
+const prices: any = await limestone.query()
   .symbols(["AR", "ETH", "BTC"])
   .atDate("2021-04-19")
   .exec();
@@ -104,7 +136,10 @@ const prices: any = await query()
 #### Get prices for all available tokens
 
 ```javascript
-const prices = await lQuery().allSymbols().latest().exec();
+const prices = await limestone.query()
+  .allSymbols()
+  .latest()
+  .exec();
 
 console.log(prices); // Example output below
 /*

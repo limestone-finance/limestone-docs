@@ -5,8 +5,7 @@
 ## Getting started
 
 * [Installation](getting-started/installation.md)
-* [Usage](getting-started/usage/README.md)
-  * [Latest price for a single token](getting-started/usage/latest-price-for-a-single-token.md)
+* [Usage](getting-started/usage.md)
 
 ## Methods
 
@@ -20,7 +19,10 @@
 
 ## HTTP API
 
-* [Prices](http-api/prices.md)
+* [Prices](http-api/prices/README.md)
+  * [Get price for a single token](http-api/prices/get-price-for-a-single-token.md)
+  * [Get several prices for a single token](http-api/prices/get-several-prices-for-a-single-token.md)
+  * [Get price for several tokens](http-api/prices/get-price-for-several-tokens.md)
 
 ## Knowledge base <a id="definitions"></a>
 
