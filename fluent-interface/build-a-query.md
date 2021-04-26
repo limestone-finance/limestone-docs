@@ -10,7 +10,7 @@ description: >-
 
 Limestone API supports a fluent interface to make the price fetching even simpler.
 
-#### Importing
+### Importing
 
 To use the fluent interface you should import the limestone-api in a standard way and initialise a query calling `limestone.query()`;
 
@@ -24,9 +24,9 @@ import limestone from 'limestone-api';
 
 ### Usage
 
-All limestone queries consits of 4 parts:
+All limestone queries consist of 4 parts:
 
-* Query initialization \(`limestone.query()`\)
+* Query initialisation \(`limestone.query()`\)
 * What to fetch \(`symbol` or `symbols`\)
 * For which date/dates \(`latest`, `atDate`, `forLastHours`, `hoursAgo`, `fromDate`, `toDate`\)
 * Query execution \(`exec`\)
