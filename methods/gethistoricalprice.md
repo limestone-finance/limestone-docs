@@ -7,7 +7,7 @@ description: >-
 
 # getHistoricalPrice
 
-#### getHistoricalPrice
+### Get a single historical price for a single token
 
 ▸ **getHistoricalPrice**\(`symbol`: _string_, `opts`: GetHistoricalPriceOptions\): _Promise_&lt;PriceData&gt;
 
@@ -28,6 +28,8 @@ The historical price for token
 
 Defined in: [limestone-api.ts:116](https://github.com/limestone-finance/limestone-api/blob/6ba5e3a/src/limestone-api.ts#L116)
 
+### Get historical price in a time range for a single token
+
 ▸ **getHistoricalPrice**\(`symbol`: _string_, `opts`: GetHistoricalPriceForIntervalOptions\): _Promise_&lt;PriceData\[\]&gt;
 
 Returns the historical prices for a token in a time range with the specified interval
@@ -46,6 +48,8 @@ Returns the historical prices for a token in a time range with the specified int
 The historical prices for the symbol with the passed interval
 
 Defined in: [limestone-api.ts:138](https://github.com/limestone-finance/limestone-api/blob/6ba5e3a/src/limestone-api.ts#L138)
+
+### Get a single historical price for several tokens
 
 ▸ **getHistoricalPrice**\(`symbols`: _string_\[\], `opts`: GetHistoricalPriceOptions\): _Promise_&lt;{ \[token: string\]: PriceData; }&gt;
 

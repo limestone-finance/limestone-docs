@@ -6,7 +6,7 @@ description: >-
 
 # getAllPrices
 
-#### getAllPrices
+### Get the latest price for all tokens
 
 ▸ **getAllPrices**\(`opts?`: GetPriceOptions\): _Promise_&lt;{ \[symbol: string\]: PriceData; }&gt;
 

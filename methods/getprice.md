@@ -6,7 +6,7 @@ description: >-
 
 # getPrice
 
-#### getPrice
+### Get the latest price for a single token
 
 ▸ **getPrice**\(`symbol`: _string_, `opts?`: GetPriceOptions\): _Promise&lt;_PriceData&gt;
 
@@ -24,6 +24,8 @@ Returns the latest price for a single symbol
 The latest price for the token
 
 Defined in: [limestone-api.ts:59](https://github.com/limestone-finance/limestone-api/blob/6ba5e3a/src/limestone-api.ts#L59)
+
+### Get the latest price for several tokens
 
 ▸ **getPrice**\(`symbols`: _string_\[\], `opts?`: GetPriceOptions\): _Promise_&lt;{ \[token: string\]: PriceData; }&gt;
 
