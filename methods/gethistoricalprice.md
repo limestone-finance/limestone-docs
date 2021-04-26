@@ -17,10 +17,37 @@ Returns the historical price for a single token
 
 **Parameters:**
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `symbol` | _string_ | Token symbol \(string\) |
-| `opts` | GetHistoricalPriceOptions | Optional params \(object\)  _opts.date: Date for the historical price_  opts.provider: provider name \(string\) \* opts.verifySignature: enable signature verification \(boolean\) |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Name</th>
+      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>symbol</code>
+      </td>
+      <td style="text-align:left"><em>string</em>
+      </td>
+      <td style="text-align:left">Token symbol (string)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>opts</code>
+      </td>
+      <td style="text-align:left">GetHistoricalPriceOptions</td>
+      <td style="text-align:left">
+        <p>Optional params (object)</p>
+        <ul>
+          <li><em>opts.date: </em>Date for the historical price</li>
+          <li><em>opts.provider</em>: provider name (string) *</li>
+          <li><em>opts.verifySignature</em>: enable signature verification (boolean)</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 **Returns:** _Promise_&lt;PriceData&gt;
 
@@ -38,10 +65,43 @@ Returns the historical prices for a token in a time range with the specified int
 
 **Parameters:**
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `symbol` | _string_ | Token symbol |
-| `opts` | GetHistoricalPriceForIntervalOptions | Options object. It must contain startDate, endDate, and interval properties.  _opts.startDate: Start time for the time range \(date \| timestamp \| string\)_  opts.endDate: End time for the time range \(date \| timestamp \| string\)  _opts.interval: Interval in milliseconds \(number\)_  opts.provider: provider name \(string\) \* opts.verifySignature: enable signature verification \(boolean\) |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Name</th>
+      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>symbol</code>
+      </td>
+      <td style="text-align:left"><em>string</em>
+      </td>
+      <td style="text-align:left">Token symbol</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>opts</code>
+      </td>
+      <td style="text-align:left">GetHistoricalPriceForIntervalOptions</td>
+      <td style="text-align:left">
+        <p>Options object. It must contain <em>startDate</em>, <em>endDate</em>, and <em>interval</em> properties.</p>
+        <ul>
+          <li><em>opts.startDate: </em>Start time for the time range (date | timestamp
+            | string)</li>
+          <li><em>opts.endDate</em>: End time for the time range (date | timestamp |
+            string) <em> </em>
+          </li>
+          <li><em>opts.interval: Interval in milliseconds (number) </em>
+          </li>
+          <li><em>opts.provider:</em> provider name (string)</li>
+          <li><em>opts.verifySignature</em>: enable signature verification (boolean)</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 **Returns:** _Promise_&lt;PriceData\[\]&gt;
 
@@ -57,10 +117,37 @@ Returns the historical prices for several tokens
 
 **Parameters:**
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `symbols` | _string_\[\] | Array of token symbols |
-| `opts` | GetHistoricalPriceOptions | Options object. It must contain the date property.  _opts.date: Date for the historical price \(date \| timestamp \| string\)_  opts.provider: provider name \(string\) \* opts.verifySignature: enable signature verification \(boolean\) |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Name</th>
+      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>symbols</code>
+      </td>
+      <td style="text-align:left"><em>string</em>[]</td>
+      <td style="text-align:left">Array of token symbols</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>opts</code>
+      </td>
+      <td style="text-align:left">GetHistoricalPriceOptions</td>
+      <td style="text-align:left">
+        <p>Options object. It must contain the date property.</p>
+        <ul>
+          <li><em>opts.date: </em>Date for the historical price (date | timestamp |
+            string)</li>
+          <li><em>opts.provider</em>: provider name (string)</li>
+          <li><em>opts.verifySignature</em>: enable signature verification (boolean)</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 **Returns:** _Promise_&lt;{ \[token: string\]: PriceData; }&gt;
 
