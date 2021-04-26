@@ -1,6 +1,10 @@
+---
+description: Limestone api installation
+---
+
 # Installation
 
-Limestone api is published in npm, so you can install it using npm or yarn cli tool.
+Limestone api is published in **npm**, so you can install it using npm or **yarn** cli tool.
 
 {% tabs %}
 {% tab title="npm" %}
