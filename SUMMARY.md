@@ -34,6 +34,7 @@
 
 * [Cache layer](definitions/cache-layer.md)
 * [Signature verification](definitions/signature-verification.md)
+* [Provider](definitions/provider.md)
 
 ## Links
 
