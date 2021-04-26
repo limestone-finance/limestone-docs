@@ -12,7 +12,7 @@ description: >-
 
 Returns the historical price for a single token
 
-**`remarks`** Full list of supported tokens is available at [https://github.com/limestone-finance/limestone-api/blob/main/ALL\_SUPPORTED\_TOKENS.md](https://github.com/limestone-finance/limestone-api/blob/main/ALL_SUPPORTED_TOKENS.md)
+**`remarks`** Full list of supported tokens is available [here](https://github.com/limestone-finance/limestone-api/blob/main/docs/ALL_SUPPORTED_TOKENS.md)
 
 **Parameters:**
 
