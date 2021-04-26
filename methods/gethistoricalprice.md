@@ -2,7 +2,7 @@
 description: >-
   getHistoricalPrice method is used to fetch historical prices data. It can
   fetch prices in a time range for a single token or a historical price for
-  single or several tokens.
+  single or several tokens
 ---
 
 # getHistoricalPrice

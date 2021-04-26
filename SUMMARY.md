@@ -7,7 +7,7 @@
 * [Installation](getting-started/installation.md)
 * [Usage](getting-started/usage.md)
 
-## Methods
+## Interface <a id="methods"></a>
 
 * [getPrice](methods/getprice.md)
 * [getHistoricalPrice](methods/gethistoricalprice.md)
