@@ -1,5 +1,5 @@
 ---
-description: Limestone-api usage
+description: Limestone api usage
 ---
 
 # Usage
