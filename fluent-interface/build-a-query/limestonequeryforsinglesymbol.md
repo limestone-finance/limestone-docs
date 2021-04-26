@@ -1,55 +1,57 @@
-[limestone-api](../README.md) / [Exports](../modules.md) / LimestoneQueryForSingleSymbol
+# LimestoneQueryForSingleSymbol
 
-# Class: LimestoneQueryForSingleSymbol
+[limestone-api](https://github.com/limestone-finance/limestone-docs/tree/e56f4e97ffe8229804276eb19e84c082fe4e179e/fluent-interface/README.md) / [Exports](https://github.com/limestone-finance/limestone-docs/tree/e56f4e97ffe8229804276eb19e84c082fe4e179e/fluent-interface/modules.md) / LimestoneQueryForSingleSymbol
 
-## Hierarchy
+## Class: LimestoneQueryForSingleSymbol
 
-* [*LimestoneQueryForSingleOrSeveralSymbols*](limestonequeryforsingleorseveralsymbols.md)<PriceData\>
+### Hierarchy
+
+* [_LimestoneQueryForSingleOrSeveralSymbols_](limestonequeryforsingleorseveralsymbols.md)
 
   ↳ **LimestoneQueryForSingleSymbol**
 
-## Table of contents
+### Table of contents
+
+#### Constructors
+
+* [constructor](limestonequeryforsinglesymbol.md#constructor)
+
+#### Properties
+
+* [params](limestonequeryforsinglesymbol.md#params)
+
+#### Methods
+
+* [atDate](limestonequeryforsinglesymbol.md#atdate)
+* [forLastDays](limestonequeryforsinglesymbol.md#forlastdays)
+* [forLastHours](limestonequeryforsinglesymbol.md#forlasthours)
+* [fromDate](limestonequeryforsinglesymbol.md#fromdate)
+* [getExecutableQuery](limestonequeryforsinglesymbol.md#getexecutablequery)
+* [hoursAgo](limestonequeryforsinglesymbol.md#hoursago)
+* [latest](limestonequeryforsinglesymbol.md#latest)
+* [toDate](limestonequeryforsinglesymbol.md#todate)
 
 ### Constructors
 
-- [constructor](limestonequeryforsinglesymbol.md#constructor)
+#### constructor
 
-### Properties
++ **new LimestoneQueryForSingleSymbol**\(`params`: QueryParams\): [_LimestoneQueryForSingleSymbol_](limestonequeryforsinglesymbol.md)
 
-- [params](limestonequeryforsinglesymbol.md#params)
-
-### Methods
-
-- [atDate](limestonequeryforsinglesymbol.md#atdate)
-- [forLastDays](limestonequeryforsinglesymbol.md#forlastdays)
-- [forLastHours](limestonequeryforsinglesymbol.md#forlasthours)
-- [fromDate](limestonequeryforsinglesymbol.md#fromdate)
-- [getExecutableQuery](limestonequeryforsinglesymbol.md#getexecutablequery)
-- [hoursAgo](limestonequeryforsinglesymbol.md#hoursago)
-- [latest](limestonequeryforsinglesymbol.md#latest)
-- [toDate](limestonequeryforsinglesymbol.md#todate)
-
-## Constructors
-
-### constructor
-
-\+ **new LimestoneQueryForSingleSymbol**(`params`: QueryParams): [*LimestoneQueryForSingleSymbol*](limestonequeryforsinglesymbol.md)
-
-#### Parameters:
+**Parameters:**
 
 | Name | Type |
-| :------ | :------ |
+| :--- | :--- |
 | `params` | QueryParams |
 
-**Returns:** [*LimestoneQueryForSingleSymbol*](limestonequeryforsinglesymbol.md)
+**Returns:** [_LimestoneQueryForSingleSymbol_](limestonequeryforsinglesymbol.md)
 
 Overrides: [LimestoneQueryForSingleOrSeveralSymbols](limestonequeryforsingleorseveralsymbols.md)
 
 Defined in: [limestone-query.ts:102](https://github.com/limestone-finance/limestone-api/blob/3d4422c/src/limestone-query.ts#L102)
 
-## Properties
+### Properties
 
-### params
+#### params
 
 • `Protected` **params**: QueryParams
 
@@ -57,21 +59,21 @@ Inherited from: [LimestoneQueryForSingleOrSeveralSymbols](limestonequeryforsingl
 
 Defined in: [limestone-query.ts:58](https://github.com/limestone-finance/limestone-api/blob/3d4422c/src/limestone-query.ts#L58)
 
-## Methods
+### Methods
 
-### atDate
+#### atDate
 
-▸ **atDate**(`date`: ConvertableToDate): [*LimestoneQueryExecutable*](limestonequeryexecutable.md)<PriceData\>
+▸ **atDate**\(`date`: ConvertableToDate\): [_LimestoneQueryExecutable_](limestonequeryexecutable.md)
 
 Configures query to fetch the price for a specific date.
 
-#### Parameters:
+**Parameters:**
 
 | Name | Type | Description |
-| :------ | :------ | :------ |
-| `date` | ConvertableToDate | Date for the historical price (date \| timestamp \| string) |
+| :--- | :--- | :--- |
+| `date` | ConvertableToDate | Date for the historical price \(date \| timestamp \| string\) |
 
-**Returns:** [*LimestoneQueryExecutable*](limestonequeryexecutable.md)<PriceData\>
+**Returns:** [_LimestoneQueryExecutable_](limestonequeryexecutable.md)
 
 query object
 
@@ -79,105 +81,95 @@ Inherited from: [LimestoneQueryForSingleOrSeveralSymbols](limestonequeryforsingl
 
 Defined in: [limestone-query.ts:97](https://github.com/limestone-finance/limestone-api/blob/3d4422c/src/limestone-query.ts#L97)
 
-___
+#### forLastDays
 
-### forLastDays
-
-▸ **forLastDays**(`daysCount`: *number*): [*LimestoneQueryExecutable*](limestonequeryexecutable.md)<PriceData[]\>
+▸ **forLastDays**\(`daysCount`: _number_\): [_LimestoneQueryExecutable_](limestonequeryexecutable.md)
 
 Configures query to fetch the price for the last few days
 
-#### Parameters:
+**Parameters:**
 
 | Name | Type | Description |
-| :------ | :------ | :------ |
-| `daysCount` | *number* | Number of days in the time range |
+| :--- | :--- | :--- |
+| `daysCount` | _number_ | Number of days in the time range |
 
-**Returns:** [*LimestoneQueryExecutable*](limestonequeryexecutable.md)<PriceData[]\>
+**Returns:** [_LimestoneQueryExecutable_](limestonequeryexecutable.md)
 
 query object
 
 Defined in: [limestone-query.ts:154](https://github.com/limestone-finance/limestone-api/blob/3d4422c/src/limestone-query.ts#L154)
 
-___
+#### forLastHours
 
-### forLastHours
-
-▸ **forLastHours**(`hoursCount`: *number*): [*LimestoneQueryExecutable*](limestonequeryexecutable.md)<PriceData[]\>
+▸ **forLastHours**\(`hoursCount`: _number_\): [_LimestoneQueryExecutable_](limestonequeryexecutable.md)
 
 Configures query to fetch the price for the last few hours
 
-#### Parameters:
+**Parameters:**
 
 | Name | Type | Description |
-| :------ | :------ | :------ |
-| `hoursCount` | *number* | Number of hours in the time range |
+| :--- | :--- | :--- |
+| `hoursCount` | _number_ | Number of hours in the time range |
 
-**Returns:** [*LimestoneQueryExecutable*](limestonequeryexecutable.md)<PriceData[]\>
+**Returns:** [_LimestoneQueryExecutable_](limestonequeryexecutable.md)
 
 query object
 
 Defined in: [limestone-query.ts:139](https://github.com/limestone-finance/limestone-api/blob/3d4422c/src/limestone-query.ts#L139)
 
-___
+#### fromDate
 
-### fromDate
-
-▸ **fromDate**(`date`: ConvertableToDate): [*LimestoneQueryForSingleSymbol*](limestonequeryforsinglesymbol.md)
+▸ **fromDate**\(`date`: ConvertableToDate\): [_LimestoneQueryForSingleSymbol_](limestonequeryforsinglesymbol.md)
 
 Configures query to fetch the price in a time range. It is important to use fromDate with toDate query methods
 
-#### Parameters:
+**Parameters:**
 
 | Name | Type | Description |
-| :------ | :------ | :------ |
+| :--- | :--- | :--- |
 | `date` | ConvertableToDate | Start date/time for the time range |
 
-**Returns:** [*LimestoneQueryForSingleSymbol*](limestonequeryforsinglesymbol.md)
+**Returns:** [_LimestoneQueryForSingleSymbol_](limestonequeryforsinglesymbol.md)
 
 query object
 
 Defined in: [limestone-query.ts:113](https://github.com/limestone-finance/limestone-api/blob/3d4422c/src/limestone-query.ts#L113)
 
-___
+#### getExecutableQuery
 
-### getExecutableQuery
+▸ `Protected`**getExecutableQuery**\(`update`: _any_\): [_LimestoneQueryExecutable_](limestonequeryexecutable.md)
 
-▸ `Protected`**getExecutableQuery**<T\>(`update`: *any*): [*LimestoneQueryExecutable*](limestonequeryexecutable.md)<T\>
-
-#### Type parameters:
+**Type parameters:**
 
 | Name |
-| :------ |
+| :--- |
 | `T` |
 
-#### Parameters:
+**Parameters:**
 
 | Name | Type |
-| :------ | :------ |
-| `update` | *any* |
+| :--- | :--- |
+| `update` | _any_ |
 
-**Returns:** [*LimestoneQueryExecutable*](limestonequeryexecutable.md)<T\>
+**Returns:** [_LimestoneQueryExecutable_](limestonequeryexecutable.md)
 
 Inherited from: [LimestoneQueryForSingleOrSeveralSymbols](limestonequeryforsingleorseveralsymbols.md)
 
 Defined in: [limestone-query.ts:65](https://github.com/limestone-finance/limestone-api/blob/3d4422c/src/limestone-query.ts#L65)
 
-___
+#### hoursAgo
 
-### hoursAgo
-
-▸ **hoursAgo**(`hoursCount`: *number*): [*LimestoneQueryExecutable*](limestonequeryexecutable.md)<PriceData\>
+▸ **hoursAgo**\(`hoursCount`: _number_\): [_LimestoneQueryExecutable_](limestonequeryexecutable.md)
 
 Configures query to fetch the price for X hours ago.
 
-#### Parameters:
+**Parameters:**
 
 | Name | Type | Description |
-| :------ | :------ | :------ |
-| `hoursCount` | *number* | Number of hours ago |
+| :--- | :--- | :--- |
+| `hoursCount` | _number_ | Number of hours ago |
 
-**Returns:** [*LimestoneQueryExecutable*](limestonequeryexecutable.md)<PriceData\>
+**Returns:** [_LimestoneQueryExecutable_](limestonequeryexecutable.md)
 
 query object
 
@@ -185,16 +177,13 @@ Inherited from: [LimestoneQueryForSingleOrSeveralSymbols](limestonequeryforsingl
 
 Defined in: [limestone-query.ts:86](https://github.com/limestone-finance/limestone-api/blob/3d4422c/src/limestone-query.ts#L86)
 
-___
+#### latest
 
-### latest
+▸ **latest**\(\): [_LimestoneQueryExecutable_](limestonequeryexecutable.md)
 
-▸ **latest**(): [*LimestoneQueryExecutable*](limestonequeryexecutable.md)<PriceData\>
+Configures query to fetch the latest price/prices It doesn't support any params
 
-Configures query to fetch the latest price/prices
-It doesn't support any params
-
-**Returns:** [*LimestoneQueryExecutable*](limestonequeryexecutable.md)<PriceData\>
+**Returns:** [_LimestoneQueryExecutable_](limestonequeryexecutable.md)
 
 query object
 
@@ -202,22 +191,21 @@ Inherited from: [LimestoneQueryForSingleOrSeveralSymbols](limestonequeryforsingl
 
 Defined in: [limestone-query.ts:77](https://github.com/limestone-finance/limestone-api/blob/3d4422c/src/limestone-query.ts#L77)
 
-___
+#### toDate
 
-### toDate
-
-▸ **toDate**(`date`: ConvertableToDate): [*LimestoneQueryExecutable*](limestonequeryexecutable.md)<PriceData[]\>
+▸ **toDate**\(`date`: ConvertableToDate\): [_LimestoneQueryExecutable_](limestonequeryexecutable.md)
 
 Configures query to fetch the price in a time range. toDate method should go after the fromDate
 
-#### Parameters:
+**Parameters:**
 
 | Name | Type | Description |
-| :------ | :------ | :------ |
+| :--- | :--- | :--- |
 | `date` | ConvertableToDate | End date/time for the time range |
 
-**Returns:** [*LimestoneQueryExecutable*](limestonequeryexecutable.md)<PriceData[]\>
+**Returns:** [_LimestoneQueryExecutable_](limestonequeryexecutable.md)
 
 query object
 
 Defined in: [limestone-query.ts:126](https://github.com/limestone-finance/limestone-api/blob/3d4422c/src/limestone-query.ts#L126)
+

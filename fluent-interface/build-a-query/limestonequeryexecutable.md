@@ -1,67 +1,70 @@
-[limestone-api](../README.md) / [Exports](../modules.md) / LimestoneQueryExecutable
+# LimestoneQueryExecutable
 
-# Class: LimestoneQueryExecutable<QueryResultType\>
+[limestone-api](https://github.com/limestone-finance/limestone-docs/tree/e56f4e97ffe8229804276eb19e84c082fe4e179e/fluent-interface/README.md) / [Exports](https://github.com/limestone-finance/limestone-docs/tree/e56f4e97ffe8229804276eb19e84c082fe4e179e/fluent-interface/modules.md) / LimestoneQueryExecutable
 
-## Type parameters
+## Class: LimestoneQueryExecutable
+
+### Type parameters
 
 | Name |
-| :------ |
+| :--- |
 | `QueryResultType` |
 
-## Table of contents
+### Table of contents
+
+#### Constructors
+
+* [constructor](limestonequeryexecutable.md#constructor)
+
+#### Properties
+
+* [params](limestonequeryexecutable.md#params)
+
+#### Methods
+
+* [exec](limestonequeryexecutable.md#exec)
 
 ### Constructors
 
-- [constructor](limestonequeryexecutable.md#constructor)
+#### constructor
 
-### Properties
++ **new LimestoneQueryExecutable**\(`params?`: {}\): [_LimestoneQueryExecutable_](limestonequeryexecutable.md)
 
-- [params](limestonequeryexecutable.md#params)
-
-### Methods
-
-- [exec](limestonequeryexecutable.md#exec)
-
-## Constructors
-
-### constructor
-
-\+ **new LimestoneQueryExecutable**<QueryResultType\>(`params?`: {}): [*LimestoneQueryExecutable*](limestonequeryexecutable.md)<QueryResultType\>
-
-#### Type parameters:
+**Type parameters:**
 
 | Name |
-| :------ |
+| :--- |
 | `QueryResultType` |
 
-#### Parameters:
+**Parameters:**
 
 | Name | Type | Default value |
-| :------ | :------ | :------ |
-| `params` | *object* | {} |
+| :--- | :--- | :--- |
+| `params` | _object_ | {} |
 
-**Returns:** [*LimestoneQueryExecutable*](limestonequeryexecutable.md)<QueryResultType\>
+**Returns:** [_LimestoneQueryExecutable_](limestonequeryexecutable.md)
 
 Defined in: [limestone-query.ts:173](https://github.com/limestone-finance/limestone-api/blob/3d4422c/src/limestone-query.ts#L173)
 
-## Properties
+### Properties
 
-### params
+#### params
 
 • `Private` **params**: QueryParams
 
 Defined in: [limestone-query.ts:173](https://github.com/limestone-finance/limestone-api/blob/3d4422c/src/limestone-query.ts#L173)
 
-## Methods
+### Methods
 
-### exec
+#### exec
 
-▸ **exec**(): *Promise*<QueryResultType\>
+▸ **exec**\(\): _Promise_
 
 Executes the query
 
-**Returns:** *Promise*<QueryResultType\>
+**Returns:** _Promise_
 
-Promise resolving the query result (result type depends on the query)
+Promise resolving the query result \(result type depends on the query\)
 
 Defined in: [limestone-query.ts:187](https://github.com/limestone-finance/limestone-api/blob/3d4422c/src/limestone-query.ts#L187)
+
