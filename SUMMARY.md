@@ -16,7 +16,12 @@
 
 ## Fluent interface
 
-* [Limestone query](fluent-interface/build-a-query.md)
+* [Limestone query](fluent-interface/build-a-query/README.md)
+  * [LimestoneQuery](fluent-interface/build-a-query/limestonequery.md)
+  * [LimestoneQueryForSeveralSymbols](fluent-interface/build-a-query/limestonequeryforseveralsymbols.md)
+  * [LimestoneQueryForSingleSymbol](fluent-interface/build-a-query/limestonequeryforsinglesymbol.md)
+  * [LimestoneQueryForSingleOrSeveralSymbols](fluent-interface/build-a-query/limestonequeryforsingleorseveralsymbols.md)
+  * [LimestoneQueryExecutable](fluent-interface/build-a-query/limestonequeryexecutable.md)
 
 ## HTTP API
 
