@@ -14,10 +14,36 @@ Returns the latest price for a single symbol
 
 **Parameters:**
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `symbol` | _string_ | Token symbol \(string\) |
-| `opts?` | GetPriceOptions | Optional params \(object\)  _opts.provider: provider name \(string\)_  opts.verifySignature: enable signature verification \(boolean\) |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Name</th>
+      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>symbol</code>
+      </td>
+      <td style="text-align:left"><em>string</em>
+      </td>
+      <td style="text-align:left">Token symbol (string)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>opts?</code>
+      </td>
+      <td style="text-align:left">GetPriceOptions</td>
+      <td style="text-align:left">
+        <p>Optional params (object)</p>
+        <ul>
+          <li><em>opts.provider: </em>provider name<em> </em>(string)</li>
+          <li><em>opts.verifySignature</em>: enable signature verification (boolean)</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 **Returns:** _Promise_&lt;PriceData&gt;
 
@@ -33,10 +59,35 @@ Returns the latest price for several symbols
 
 **Parameters:**
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `symbols` | _string_\[\] | Token symbols \(array of strings\) |
-| `opts?` | GetPriceOptions | Optional params \(object\)  _opts.provider: provider name \(string\)_  opts.verifySignature: enable signature verification \(boolean\) |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Name</th>
+      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>symbols</code>
+      </td>
+      <td style="text-align:left"><em>string</em>[]</td>
+      <td style="text-align:left">Token symbols (array of strings)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>opts?</code>
+      </td>
+      <td style="text-align:left">GetPriceOptions</td>
+      <td style="text-align:left">
+        <p>Optional params (object)</p>
+        <ul>
+          <li><em>opts.provider: </em>provider name (string)</li>
+          <li><em>opts.verifySignature</em>: enable signature verification (boolean)</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 **Returns:** _Promise_&lt;{ \[token: string\]: PriceData; }&gt;
 
