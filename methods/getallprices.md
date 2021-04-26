@@ -14,9 +14,31 @@ Returns the latest price for all the supported symbols
 
 **Parameters:**
 
-| Name | Type | Default value | Description |
-| :--- | :--- | :--- | :--- |
-| `opts` | GetPriceOptions | {} | Optioanl options object.  _opts.provider: provider name \(string\)_  opts.verifySignature: enable signature verification \(boolean\) |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Name</th>
+      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Default value</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>opts</code>
+      </td>
+      <td style="text-align:left">GetPriceOptions</td>
+      <td style="text-align:left">{}</td>
+      <td style="text-align:left">
+        <p>Optioanl options object.</p>
+        <ul>
+          <li><em>opts.provider: </em>provider name (string)</li>
+          <li><em>opts.verifySignature</em>: enable signature verification (boolean)</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 **Returns:** _Promise_&lt;{ \[symbol: string\]: PriceData; }&gt;
 
