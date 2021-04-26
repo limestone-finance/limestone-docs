@@ -12,6 +12,7 @@
 * [getPrice](methods/getprice.md)
 * [getHistoricalPrice](methods/gethistoricalprice.md)
 * [getAllPrices](methods/getallprices.md)
+* [query](methods/query.md)
 
 ## Fluent interface
 
