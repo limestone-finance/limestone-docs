@@ -1,18 +1,18 @@
 ---
 description: >-
-  Limestone query is a special construction exported by limestone api. It makes
-  it easier to execute queries for popular use cases.
+  Limestone query is an extra interface exported by the Limestone API. It uses a
+  human readable syntax to facilitate query creation.
 ---
 
 # Limestone query
 
 ## Fluent interface for limestone
 
-Limestone API supports a fluent interface to make the price fetching even simpler.
+Limestone API supports a fluent interface to simplify the syntax.
 
 ### Importing
 
-To use the fluent interface you should import the limestone-api in a standard way and initialise a query calling `limestone.query()`;
+To use the fluent interface you should first import the limestone-api in a standard way
 
 ```javascript
 // Using Node.js `require()`

@@ -1,14 +1,14 @@
 # What is Limestone API
 
-Limestone API is a Javascript library for fetching trusted token pricing data from [Limestone data ecosystem](https://github.com/limestone-finance/limestone/blob/master/README.md).
+Limestone API is a Javascript library for fetching trusted token pricing data from the [Limestone data ecosystem](https://github.com/limestone-finance/limestone/blob/master/README.md).
 
-It is a Javascript wrapper for [Limestone HTTP Api](docs/HTTP_API.md).
+It is implemented as a Javascript wrapper for the [Limestone HTTP Api](docs/HTTP_API.md).
 
 ### ✅ Why Limestone API
 
 #### ✓ Secure
 
-Limestone pricing data is secured on Arweave and protected by the provider's collateral. [Learn more](https://github.com/limestone-finance/limestone/blob/master/README.md)
+Limestone pricing data is secured on the [Arweave](https://www.arweave.org/) chain and protected by the provider's collateral. [Learn more](https://github.com/limestone-finance/limestone/blob/master/README.md)
 
 #### ✓ Easy to use
 
@@ -20,7 +20,7 @@ We support BTC, ETH, AR, EUR, and many other crypto and fiat currencies. [All su
 
 #### ✓ TypeScript Support
 
-Limestone API is fully written in Typescript and then compiled to JavaScript. [Source code](https://github.com/limestone-finance/limestone-api)
+Limestone API is natively written in Typescript and then compiled to JavaScript. [Source code](https://github.com/limestone-finance/limestone-api)
 
 ### Links
 

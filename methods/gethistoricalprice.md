@@ -1,8 +1,7 @@
 ---
 description: >-
-  getHistoricalPrice method is used to fetch historical prices data. It can
-  fetch prices in a time range for a single token or a historical price for
-  single or several tokens
+  getHistoricalPrice method is used to fetch historical prices. It can fetch
+  prices in a time range for a single or multiple tokens
 ---
 
 # getHistoricalPrice
@@ -151,7 +150,7 @@ Returns the historical prices for several tokens
 
 **Returns:** _Promise_&lt;{ \[token: string\]: PriceData; }&gt;
 
-The historical prices for several tokens
+The historical prices for multiple tokens
 
 Defined in: [limestone-api.ts:153](https://github.com/limestone-finance/limestone-api/blob/6ba5e3a/src/limestone-api.ts#L153)
 
@@ -170,7 +169,7 @@ console.log(price.value); // AR price for specific time
 ```
 
 {% hint style="info" %}
-The `date` argument must be convertable to Date type. You may pass date \(e.g. `new Date(2021-04-01)`\), timestamp \(e.g. `1617709771289`\), or just string \(e.g. `2021-04-01` or `2021-04-01T12:30:58`\)
+The `date` argument must be convertable to the Date type. You may pass a date \(e.g. `new Date(2021-04-01)`\), a timestamp \(e.g. `1617709771289`\), or just a string \(e.g. `2021-04-01` or `2021-04-01T12:30:58`\)
 {% endhint %}
 
 #### Get the historical price for several tokens

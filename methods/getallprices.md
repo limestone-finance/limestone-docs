@@ -1,7 +1,7 @@
 ---
 description: >-
-  getAllPrices method can be used to fetch the latest price for all available
-  tokens
+  getAllPrices method can be used to fetch the latest price for all the
+  available tokens
 ---
 
 # getAllPrices
@@ -30,7 +30,7 @@ Returns the latest price for all the supported symbols
       <td style="text-align:left">GetPriceOptions</td>
       <td style="text-align:left">{}</td>
       <td style="text-align:left">
-        <p>Optioanl options object.</p>
+        <p>An optional options object.</p>
         <ul>
           <li><em>opts.provider: </em>provider name (string)</li>
           <li><em>opts.verifySignature</em>: enable signature verification (boolean)</li>

@@ -1,6 +1,6 @@
 ---
 description: >-
-  getPrice method is used to fetch the latest price for a single or several
+  getPrice method is used to fetch the latest price for a single or multiple
   tokens
 ---
 
@@ -51,7 +51,7 @@ The latest price for the token
 
 Defined in: [limestone-api.ts:59](https://github.com/limestone-finance/limestone-api/blob/6ba5e3a/src/limestone-api.ts#L59)
 
-### Get the latest price for several tokens
+### Get the latest price for multiple tokens
 
 ▸ **getPrice**\(`symbols`: _string_\[\], `opts?`: GetPriceOptions\): _Promise_&lt;{ \[token: string\]: PriceData; }&gt;
 
@@ -133,9 +133,9 @@ All the prices are denominated in USD. You can fetch price data for BTC, ETH, AR
 
 ```
 
-#### Get the latest prices for several tokens
+#### Get the latest prices for multiple tokens
 
-To fetch prices for several tokens use the `getPrice` method and pass an array with any subset of [supported tokens](docs/ALL_SUPPORTED_TOKENS.md).
+To fetch prices for multiple tokens use the `getPrice` method and pass an array with a subset of [supported tokens](docs/ALL_SUPPORTED_TOKENS.md).
 
 ```javascript
 const prices = await limestone.getPrice(["BTC", "ETH", "AR", "EUR"]);
