@@ -22,3 +22,11 @@ We support BTC, ETH, AR, EUR, and many other crypto and fiat currencies. [All su
 
 Limestone API is fully written in Typescript and then compiled to JavaScript. [Source code](https://github.com/limestone-finance/limestone-api)
 
+### Links
+
+{% page-ref page="getting-started/installation.md" %}
+
+{% page-ref page="getting-started/usage.md" %}
+
+
+
