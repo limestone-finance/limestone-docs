@@ -65,5 +65,23 @@ Error message will be printed here
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Examples
 
+#### Get the latest price for AR token
+
+```bash
+curl "https://api.limestone.finance/prices?symbol=AR&provider=limestone&limit=1"
+```
+
+#### Get the latest price for BTC token
+
+```bash
+curl "https://api.limestone.finance/prices?symbol=BTC&provider=limestone&limit=1"
+```
+
+#### Get the latest 100 prices for AR token
+
+```bash
+curl "https://api.limestone.finance/prices?symbol=AR&provider=limestone&limit=100"
+```
 

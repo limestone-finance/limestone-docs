@@ -89,5 +89,11 @@ Error message will be printed here
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Examples
 
+#### Get the historical prices for AR token
+
+```bash
+curl "https://api.limestone.finance/prices?symbol=AR&provider=limestone&fromTimestamp=1619546099466&toTimestamp=1619547041149&interval=1"
+```
 

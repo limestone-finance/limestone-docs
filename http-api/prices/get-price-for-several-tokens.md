@@ -91,5 +91,11 @@ Error message will be printed here
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Examples
 
+#### Get the latest prices for AR, BTC and ETH tokens
+
+```bash
+curl "https://api.limestone.finance/prices?symbols=AR,BTC,ETH&provider=limestone"
+```
 
