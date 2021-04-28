@@ -16,7 +16,7 @@ You don't need any API keys. Just install the npm package and add a single line 
 
 #### ✓ 100+ tokens
 
-We support BTC, ETH, AR, EUR, and many other crypto and fiat currencies. [All supported tokens](docs/ALL_SUPPORTED_TOKENS.md)
+We support BTC, ETH, AR, EUR, and many other crypto and fiat currencies. [All supported tokens](https://github.com/limestone-finance/limestone-api/blob/main/docs/ALL_SUPPORTED_TOKENS.md)
 
 #### ✓ TypeScript Support
 
