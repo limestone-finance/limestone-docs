@@ -27,7 +27,7 @@ import limestone from 'limestone-api';
 All limestone queries consist of 4 parts:
 
 * Query initialisation \(`limestone.query()`\)
-* What to fetch \(`symbol` or `symbols`\)
+* What to fetch \(`symbol,` `symbols` or `allSymbols`\)  
 * For which date/dates \(`latest`, `atDate`, `forLastHours`, `hoursAgo`, `fromDate`, `toDate`\)
 * Query execution \(`exec`\)
 
