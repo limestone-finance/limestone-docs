@@ -60,7 +60,7 @@ Defined in: [limestone-api.ts:116](https://github.com/limestone-finance/limeston
 
 Returns the historical prices for a token in a time range with the specified interval
 
-**`remarks`** This method can be used to display charts with historical prices. Full list of supported tokens is available at [https://github.com/limestone-finance/limestone-api/blob/main/ALL\_SUPPORTED\_TOKENS.md](https://github.com/limestone-finance/limestone-api/blob/main/ALL_SUPPORTED_TOKENS.md)
+**`remarks`** This method can be used to display charts with historical prices. Full list of supported tokens is available [here](https://github.com/limestone-finance/limestone-api/blob/main/docs/ALL_SUPPORTED_TOKENS.md)
 
 **Parameters:**
 
