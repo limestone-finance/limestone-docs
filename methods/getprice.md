@@ -107,7 +107,7 @@ console.log(price.timestamp); // the exact timestamp of the price
 ```
 
 {% hint style="info" %}
-All the prices are denominated in USD. You can fetch price data for BTC, ETH, AR, EUR and any other of [ 100+ supported tokens](docs/ALL_SUPPORTED_TOKENS.md)
+All the prices are denominated in USD. You can fetch price data for BTC, ETH, AR, EUR and any other of [ 100+ supported tokens](https://github.com/limestone-finance/limestone-api/blob/main/docs/ALL_SUPPORTED_TOKENS.md)
 {% endhint %}
 
 #### **Price data format** 
