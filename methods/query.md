@@ -4,7 +4,7 @@ description: query method is used to initialise a limestone query
 
 # query
 
-### Simple example
+## Simple example
 
 ```javascript
 const price = await limestone.query()
@@ -19,6 +19,4 @@ console.log(price.timestamp); // the exact timestamp of the price
 To learn more, visit [the Limestone Query page](../fluent-interface/build-a-query/)
 
 {% page-ref page="../fluent-interface/build-a-query/" %}
-
-
 

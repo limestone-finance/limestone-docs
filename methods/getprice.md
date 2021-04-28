@@ -1,49 +1,23 @@
 ---
 description: >-
-  getPrice method is used to fetch the latest price for a single or multiple
+  getPrice method is used to fetch the latest price for a single or several
   tokens
 ---
 
 # getPrice
 
-### Get the latest price for a single token
+## Get the latest price for a single token
 
-▸ **getPrice**\(`symbol`: _string_, `opts?`: GetPriceOptions\): _Promise&lt;_PriceData&gt;
+▸ **getPrice**\(`symbol`: _string_, `opts?`: GetPriceOptions\): \_Promise&lt;\_PriceData&gt;
 
 Returns the latest price for a single symbol
 
 **Parameters:**
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Name</th>
-      <th style="text-align:left">Type</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><code>symbol</code>
-      </td>
-      <td style="text-align:left"><em>string</em>
-      </td>
-      <td style="text-align:left">Token symbol (string)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>opts?</code>
-      </td>
-      <td style="text-align:left">GetPriceOptions</td>
-      <td style="text-align:left">
-        <p>Optional params (object)</p>
-        <ul>
-          <li><em>opts.provider: </em>provider name<em> </em>(string)</li>
-          <li><em>opts.verifySignature</em>: enable signature verification (boolean)</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| `symbol` | _string_ | Token symbol \(string\) |
+| `opts?` | GetPriceOptions | Optional params \(object\)  _opts.provider: provider name \(string\)_  opts.verifySignature: enable signature verification \(boolean\) |
 
 **Returns:** _Promise_&lt;PriceData&gt;
 
@@ -51,7 +25,7 @@ The latest price for the token
 
 Defined in: [limestone-api.ts:59](https://github.com/limestone-finance/limestone-api/blob/6ba5e3a/src/limestone-api.ts#L59)
 
-### Get the latest price for multiple tokens
+## Get the latest price for several tokens
 
 ▸ **getPrice**\(`symbols`: _string_\[\], `opts?`: GetPriceOptions\): _Promise_&lt;{ \[token: string\]: PriceData; }&gt;
 
@@ -59,35 +33,10 @@ Returns the latest price for several symbols
 
 **Parameters:**
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Name</th>
-      <th style="text-align:left">Type</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><code>symbols</code>
-      </td>
-      <td style="text-align:left"><em>string</em>[]</td>
-      <td style="text-align:left">Token symbols (array of strings)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>opts?</code>
-      </td>
-      <td style="text-align:left">GetPriceOptions</td>
-      <td style="text-align:left">
-        <p>Optional params (object)</p>
-        <ul>
-          <li><em>opts.provider: </em>provider name (string)</li>
-          <li><em>opts.verifySignature</em>: enable signature verification (boolean)</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| `symbols` | _string_\[\] | Token symbols \(array of strings\) |
+| `opts?` | GetPriceOptions | Optional params \(object\)  _opts.provider: provider name \(string\)_  opts.verifySignature: enable signature verification \(boolean\) |
 
 **Returns:** _Promise_&lt;{ \[token: string\]: PriceData; }&gt;
 
@@ -95,9 +44,9 @@ The latest price for the tokens
 
 Defined in: [limestone-api.ts:70](https://github.com/limestone-finance/limestone-api/blob/6ba5e3a/src/limestone-api.ts#L70)
 
-### Examples
+## Examples
 
-#### Get the latest price for a single token
+### Get the latest price for a single token
 
 ```javascript
 const price = await limestone.getPrice("AR");
@@ -107,10 +56,10 @@ console.log(price.timestamp); // the exact timestamp of the price
 ```
 
 {% hint style="info" %}
-All the prices are denominated in USD. You can fetch price data for BTC, ETH, AR, EUR and any other of [ 100+ supported tokens](docs/ALL_SUPPORTED_TOKENS.md)
+All the prices are denominated in USD. You can fetch price data for BTC, ETH, AR, EUR and any other of [ 100+ supported tokens](https://github.com/limestone-finance/limestone-docs/tree/1c10aa6c007b11023008acedb55dcd94affec715/methods/docs/ALL_SUPPORTED_TOKENS.md)
 {% endhint %}
 
-#### **Price data format** 
+### **Price data format**
 
 ```javascript
   {
@@ -122,7 +71,7 @@ All the prices are denominated in USD. You can fetch price data for BTC, ETH, AR
   }
 ```
 
-####  Fetch price using promises
+### Fetch price using promises
 
 ```javascript
   // As async/await is only a syntactic sugar on Javascript
@@ -130,12 +79,11 @@ All the prices are denominated in USD. You can fetch price data for BTC, ETH, AR
   const price = limestone.getPrice("AR").then((price) => {
     console.log(price.value); // latest price value for AR token
   });
-
 ```
 
-#### Get the latest prices for multiple tokens
+### Get the latest prices for several tokens
 
-To fetch prices for multiple tokens use the `getPrice` method and pass an array with a subset of [supported tokens](docs/ALL_SUPPORTED_TOKENS.md).
+To fetch prices for several tokens use the `getPrice` method and pass an array with any subset of [supported tokens](https://github.com/limestone-finance/limestone-docs/tree/1c10aa6c007b11023008acedb55dcd94affec715/methods/docs/ALL_SUPPORTED_TOKENS.md).
 
 ```javascript
 const prices = await limestone.getPrice(["BTC", "ETH", "AR", "EUR"]);

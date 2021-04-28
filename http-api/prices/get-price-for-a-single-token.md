@@ -32,7 +32,7 @@ Limit of prices
 Price successfully fetched
 {% endapi-method-response-example-description %}
 
-```
+```text
 [
   {
     "id": "11dba94e-1b1b-4c0e-ba5f-fbd6e6170cb9",
@@ -57,7 +57,7 @@ Price successfully fetched
 Error occurred while fetching the price
 {% endapi-method-response-example-description %}
 
-```
+```text
 Error message will be printed here
 ```
 {% endapi-method-response-example %}
@@ -65,23 +65,67 @@ Error message will be printed here
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Examples
+{% api-method method="get" host="https://api.limestone.finance" path="/prices" %}
+{% api-method-summary %}
 
-#### Get the latest price for AR token
+{% endapi-method-summary %}
 
-```bash
-curl "https://api.limestone.finance/prices?symbol=AR&provider=limestone&limit=1"
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-query-parameters %}
+{% api-method-parameter name="provider" type="string" required=false %}
+Only "limestone" provider is currently supported
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
+
 ```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
-#### Get the latest price for BTC token
+{% api-method method="get" host="https://api.limestone.finance" path="/prices" %}
+{% api-method-summary %}
 
-```bash
-curl "https://api.limestone.finance/prices?symbol=BTC&provider=limestone&limit=1"
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-query-parameters %}
+{% api-method-parameter name="provider" type="string" required=false %}
+Only "limestone" provider is currently supported
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
+
 ```
-
-#### Get the latest 100 prices for AR token
-
-```bash
-curl "https://api.limestone.finance/prices?symbol=AR&provider=limestone&limit=100"
-```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
