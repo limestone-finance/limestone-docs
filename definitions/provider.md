@@ -1,8 +1,8 @@
 ---
 description: >-
-  Provider is a unit that is responsible for fetching the data from external
-  api, transforming to a common format, and persisting collected information in
-  a Limestone Data ecosystem.
+  A provider is an entity that fetches the data from external api, transforms it
+  to a standard format, and persists collected information in the Limestone data
+  ecosystem.
 ---
 
 # Provider
@@ -10,8 +10,8 @@ description: >-
 Each provider has
 
 * name
-* public key \(is used for signature verification\)
-* address \(address on the arweave blockchain\)
+* public key \(used for signature verification\)
+* address \(address on the Arweave blockchain\)
 
 ### Available providers
 
@@ -21,5 +21,5 @@ Each provider has
 
 ### Become a provider
 
-To become a data provider in the limestone network, pease [contact us](https://discord.gg/2uwppEN4fM)
+If you're interested in becoming a data provider, please [contact us](https://discord.gg/2uwppEN4fM)
 
